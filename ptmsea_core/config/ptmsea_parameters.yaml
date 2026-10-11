@@ -1,0 +1,14 @@
+# Historical selected-run values checked against a frozen parameters.txt file.
+sample_norm_type: rank
+weight: 0.75
+correl_type: z.score
+statistic: area.under.RES
+output_score_type: NES
+nperm: 1000
+min_overlap: 5
+global_fdr: FALSE
+export_signat_gct: FALSE
+run_parallel: FALSE
+gmt_filename: ptm.sig.db.all.flanking.human.v1.9.1.gmt
+gmt_version: v1.9.1
+gmt_sha256: b901fcf063e1ed31f58edbfe6dfda0b7ac5969209028f1f7b015ac7305d47264

@@ -1,0 +1,28 @@
+{
+  "release_kind": "CORRECTED_WORKING_RELEASE",
+  "allowed_comparison_statuses": ["VALIDATED"],
+  "target_fallback_enabled": false,
+  "frontend_columns": [
+    "PXD", "comparison_id", "drug", "drug_target", "center_kinase",
+    "regulated_site_id", "regulated_gene", "ptmsea_signature",
+    "signature_direction", "site_response_direction", "evidence_rule",
+    "mean_delta_treatment_minus_control", "p_value", "BH_FDR_kinase_like",
+    "network_support_status", "network_match_type", "network_sources",
+    "comparison", "protein_accession", "regulated_protein", "amino_acid", "position",
+    "sequence_15aa", "cell_line", "disease", "tissue", "model_context", "PMID", "project_title",
+    "source_file", "source_row", "selected_seed", "statistical_test_status", "n_pairs",
+    "min_independent_units", "drug_target_approved", "regulated_gene_approved",
+    "target_signature_status", "metadata_complete", "representative_policy",
+    "site_identity_provenance_json", "site_identity_ambiguous"
+  ],
+  "frontend_rename": {
+    "p_value": "p_value",
+    "BH_FDR_kinase_like": "BH_FDR"
+  },
+  "full_columns": [
+    "PXD", "comparison_id", "drug", "drug_target", "center_kinase",
+    "regulated_site_id", "regulated_gene", "ptmsea_signature",
+    "evidence_rule", "network_support_status"
+  ],
+  "website_specific_filter": null
+}
