@@ -1,6 +1,6 @@
 # KinaseMD 2.0 key functions
 
-This repository is a compact collection of the main analysis functions used in KinaseMD 2.0. It is intended for code review and method reference, rather than as a complete reproducible database release.
+This repository is a compact collection of the main analysis functions used in KinaseMD 2.0.
 
 ## Included code
 
@@ -26,6 +26,10 @@ The network-rewiring module applies GPS5.0 reference and mutant scores with kina
 
 The sequence-scoring tool used upstream of the rewiring classification is GPS 5.0. Please cite: Wang C, Xu H, Lin S, Deng W, Zhou J, Zhang Y, Shi Y, Peng D, and Xue Y. *GPS 5.0: An Update on the Prediction of Kinase-Specific Phosphorylation Sites in Proteins.* **Genomics, Proteomics & Bioinformatics** 18(1), 72–80 (2020). [https://doi.org/10.1016/j.gpb.2020.01.001](https://doi.org/10.1016/j.gpb.2020.01.001).
 
+### PTM-SEA reference
+
+The PTM-SEA analysis uses the official [ssGSEA2.0/PTM-SEA repository](https://github.com/broadinstitute/ssGSEA2.0). Please cite: Krug K, Mertins P, Zhang B, et al. *A Curated Resource for Phosphosite-specific Signature Analysis.* **Molecular & Cellular Proteomics** 18(3), 576–593 (2019). [https://doi.org/10.1074/mcp.TIR118.000943](https://doi.org/10.1074/mcp.TIR118.000943).
+
 The survival module provides lower/upper expression grouping, two-group log-rank testing, result summarization, and Kaplan–Meier plotting with confidence intervals, median-survival guides, and risk tables. No clinical or expression data are included.
 
 ## PTM literature-extraction prompts
@@ -33,7 +37,3 @@ The survival module provides lower/upper expression grouping, two-group log-rank
 The LLM prompts and two-phase extraction/review design are maintained separately in the previously published [PhosphoRLIE skill](https://github.com/Smallriver2024/phosphorlie-skill). Use that repository as the authoritative prompt resource rather than duplicating prompt text here.
 
 PhosphoRLIE provides an Extractor + Reviewer workflow for PTM events from biomedical literature, including the standalone extractor and reviewer prompts, JSON schema, and examples. For the exact prompt definitions, see its [prompts directory](https://github.com/Smallriver2024/phosphorlie-skill/tree/main/prompts) and [SKILL.md](https://github.com/Smallriver2024/phosphorlie-skill/blob/main/SKILL.md).
-
-## Scope
-
-This repository does not include raw datasets, complete study configurations, third-party databases, generated figures, or complete database-release scripts. PTM-SEA execution requires external ssGSEA2.0/PTM-SEA software and PTMsigDB resources. PTM-SEA signatures should not be interpreted as direct measurements of drug sensitivity or resistance.
